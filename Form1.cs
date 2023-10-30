@@ -21,5 +21,16 @@ namespace QuanLySieuThiMini
         {
             
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void quảnLýRauCủToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanLyThucPham quanLyRauCu = new QuanLyThucPham();
+            quanLyRauCu.Show();
+        }
     }
 }
