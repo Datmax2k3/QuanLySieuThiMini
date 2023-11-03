@@ -242,6 +242,7 @@ namespace QuanLySieuThiMini
             this.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "QuanLyThucPham";
             this.Text = "QuanLyRauCu";
+            this.Load += new System.EventHandler(this.QuanLyThucPham_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

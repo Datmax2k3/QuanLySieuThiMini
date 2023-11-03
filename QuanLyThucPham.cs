@@ -16,5 +16,10 @@ namespace QuanLySieuThiMini
         {
             InitializeComponent();
         }
+
+        private void QuanLyThucPham_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
