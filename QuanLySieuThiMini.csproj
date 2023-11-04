@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="connectionString.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +113,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\zyro-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="quanLyThucPham.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

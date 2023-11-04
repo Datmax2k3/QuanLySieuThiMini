@@ -33,24 +33,25 @@ namespace QuanLySieuThiMini
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.trangChuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.quảnLýRauCủToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.quảnLýThựcPhẩmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.quảnLýKháchHàngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStrip_thucPham = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStrip_doGiaDung = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStrip_khachHang = new System.Windows.Forms.ToolStripMenuItem();
             this.trợGiúpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.trangChuToolStripMenuItem,
-            this.quảnLýRauCủToolStripMenuItem,
-            this.quảnLýThựcPhẩmToolStripMenuItem,
-            this.quảnLýKháchHàngToolStripMenuItem,
+            this.toolStrip_thucPham,
+            this.toolStrip_doGiaDung,
+            this.toolStrip_khachHang,
             this.trợGiúpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1104, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1104, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -58,37 +59,39 @@ namespace QuanLySieuThiMini
             // trangChuToolStripMenuItem
             // 
             this.trangChuToolStripMenuItem.Name = "trangChuToolStripMenuItem";
-            this.trangChuToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.trangChuToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
             this.trangChuToolStripMenuItem.Text = "Trang chủ";
             // 
-            // quảnLýRauCủToolStripMenuItem
+            // toolStrip_thucPham
             // 
-            this.quảnLýRauCủToolStripMenuItem.Name = "quảnLýRauCủToolStripMenuItem";
-            this.quảnLýRauCủToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
-            this.quảnLýRauCủToolStripMenuItem.Text = "Quản lý rau củ";
-            this.quảnLýRauCủToolStripMenuItem.Click += new System.EventHandler(this.quảnLýRauCủToolStripMenuItem_Click);
+            this.toolStrip_thucPham.Name = "toolStrip_thucPham";
+            this.toolStrip_thucPham.Size = new System.Drawing.Size(148, 24);
+            this.toolStrip_thucPham.Text = "Quản lý thực phẩm";
+            this.toolStrip_thucPham.Click += new System.EventHandler(this.quảnLýRauCủToolStripMenuItem_Click);
             // 
-            // quảnLýThựcPhẩmToolStripMenuItem
+            // toolStrip_doGiaDung
             // 
-            this.quảnLýThựcPhẩmToolStripMenuItem.Name = "quảnLýThựcPhẩmToolStripMenuItem";
-            this.quảnLýThựcPhẩmToolStripMenuItem.Size = new System.Drawing.Size(121, 20);
-            this.quảnLýThựcPhẩmToolStripMenuItem.Text = "Quản lý thực phẩm";
+            this.toolStrip_doGiaDung.Name = "toolStrip_doGiaDung";
+            this.toolStrip_doGiaDung.Size = new System.Drawing.Size(158, 24);
+            this.toolStrip_doGiaDung.Text = "Quản lý đồ gia dụng";
+            this.toolStrip_doGiaDung.Click += new System.EventHandler(this.toolStrip_doGiaDung_Click);
             // 
-            // quảnLýKháchHàngToolStripMenuItem
+            // toolStrip_khachHang
             // 
-            this.quảnLýKháchHàngToolStripMenuItem.Name = "quảnLýKháchHàngToolStripMenuItem";
-            this.quảnLýKháchHàngToolStripMenuItem.Size = new System.Drawing.Size(125, 20);
-            this.quảnLýKháchHàngToolStripMenuItem.Text = "Quản lý khách hàng";
+            this.toolStrip_khachHang.Name = "toolStrip_khachHang";
+            this.toolStrip_khachHang.Size = new System.Drawing.Size(152, 24);
+            this.toolStrip_khachHang.Text = "Quản lý khách hàng";
+            this.toolStrip_khachHang.Click += new System.EventHandler(this.toolStrip_khachHang_Click);
             // 
             // trợGiúpToolStripMenuItem
             // 
             this.trợGiúpToolStripMenuItem.Name = "trợGiúpToolStripMenuItem";
-            this.trợGiúpToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.trợGiúpToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
             this.trợGiúpToolStripMenuItem.Text = "Trợ giúp";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::QuanLySieuThiMini.Properties.Resources.zyro_image;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -109,9 +112,9 @@ namespace QuanLySieuThiMini
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem trangChuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem quảnLýRauCủToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem quảnLýThựcPhẩmToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem quảnLýKháchHàngToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStrip_thucPham;
+        private System.Windows.Forms.ToolStripMenuItem toolStrip_doGiaDung;
+        private System.Windows.Forms.ToolStripMenuItem toolStrip_khachHang;
         private System.Windows.Forms.ToolStripMenuItem trợGiúpToolStripMenuItem;
     }
 }

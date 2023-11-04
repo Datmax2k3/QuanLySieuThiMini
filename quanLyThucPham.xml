@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<thucpham>
+	<ThucPham maThucPham="01" tenThucPham="Coca Cola" soLuong="100" gia="15000" nguonGoc="Việt Nam"/>
+	<ThucPham maThucPham="02" tenThucPham="Thịt bò" soLuong="90" gia="35000" nguonGoc="Việt Nam"/>
+	<ThucPham maThucPham="03" tenThucPham="Thịt heo" soLuong="50" gia="25000" nguonGoc="Việt Nam"/>
+	<ThucPham maThucPham="04" tenThucPham="Kẹo" soLuong="70" gia="5000" nguonGoc="Việt Nam"/>
+</thucpham>

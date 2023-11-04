@@ -32,5 +32,17 @@ namespace QuanLySieuThiMini
             QuanLyThucPham quanLyRauCu = new QuanLyThucPham();
             quanLyRauCu.Show();
         }
+
+        private void toolStrip_doGiaDung_Click(object sender, EventArgs e)
+        {
+            QuanLyDoGiaDung quanLyDoGiaDung = new QuanLyDoGiaDung();
+            quanLyDoGiaDung.Show();
+        }
+
+        private void toolStrip_khachHang_Click(object sender, EventArgs e)
+        {
+            QuanLyKhachHang quanLyKhachHang = new QuanLyKhachHang();
+            quanLyKhachHang.Show();
+        }
     }
 }
