@@ -10,39 +10,36 @@ using System.Windows.Forms;
 
 namespace QuanLySieuThiMini
 {
-    public partial class Form1 : Form
+    public partial class TrangChu : Form
     {
-        public Form1()
+        public TrangChu()
         {
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void quảnLýRauCủToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btn_qlThucPham_Click(object sender, EventArgs e)
         {
             QuanLyThucPham quanLyRauCu = new QuanLyThucPham();
             quanLyRauCu.Show();
         }
 
-        private void toolStrip_doGiaDung_Click(object sender, EventArgs e)
+        private void btn_qlDoGiaDung_Click(object sender, EventArgs e)
         {
             QuanLyDoGiaDung quanLyDoGiaDung = new QuanLyDoGiaDung();
             quanLyDoGiaDung.Show();
         }
 
-        private void toolStrip_khachHang_Click(object sender, EventArgs e)
+        private void btn_qlKhachHang_Click(object sender, EventArgs e)
         {
             QuanLyKhachHang quanLyKhachHang = new QuanLyKhachHang();
             quanLyKhachHang.Show();
+        }
+
+
+        private void btn_signOut_Click(object sender, EventArgs e)
+        {
+            LOGIN login = new LOGIN();
+            login.Show();
         }
     }
 }
